@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables/ custom properties</title>
+    <style>
+        *{
+            /* global variables */
+            --versi: pink;
+        }
+        :root{
+            /* global variables */
+            --primary-color: pink;
+            --danger-color: orange;
+           --maxw: 200px;
+        }
+        .box{
+            margin: 0px 10px;
+            /*declaring and initilizing variables */
+
+            --box-color: black;
+            --seeyog: red;
+            /* these are local variable which scope is whith in these braces */
+
+
+            width: var(--maxw);
+            height: 200px;
+
+            /* calling variables */
+            background-color: var(--seeyog);
+            border: 2px solid var(--box-color);
+            
+
+        }
+        .container{
+            display: flex;
+            background-color: var(--primary-color);
+            background-color: var(--danger-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

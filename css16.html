@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selector</title>
+    <style>
+        .container{
+            display: block;
+            margin: auto;
+            width: 500px;
+        }
+        input{
+            display:block;
+        }
+
+        /* targeting a certain attribute */
+        input[type="text"]{
+            padding: 20px;
+            border: 2px solid red;
+        }
+        a[target]{
+            font-size: 60px;
+            color: green;
+        }
+        a[target="_self"]{
+            color: red;
+        }
+
+        /* these will apply css for the 3rd child */
+        li:nth-child(3){
+            color: aqua;
+        }
+        /* will apply for every 2nd element */
+        li:nth-child(2n){
+            color:red;
+        }
+        /* selecting odd child */
+        li:nth-child(odd){
+            /* color:red; */
+            background-color: yellow;
+        }
+
+        li:nth-child(even){
+            /* color:red; */
+            background-color: pink;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="https://www.google.com" target="_blank">click to google</a></h1>
+        <h1><a href="https://www.google.com" target="_self">click to google</a></h1>
+        <form action="" class="form_controller">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="list" id="list_1">item1</li>
+            <li class="list" id="list_2">item2</li>
+            <li class="list" id="list_3">item3</li>
+            <li class="list" id="list_4">item4</li>
+            <li class="list" id="list_5">item5</li>
+            <li class="list" id="list_6">item6</li>
+            <li class="list" id="list_7">item7</li>
+            <li class="list" id="list_8">item8</li>
+            <li class="list" id="list_9">item9</li>
+            <li class="list" id="list_10">item10</li>
+        </ul>
+    </div>
+</body>
+</html>

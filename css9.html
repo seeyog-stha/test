@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css display property</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            border: 4px dotted black;
+            /* width: 100%; */
+            width: 1000px;
+            
+        }
+        img{
+            width: 34px;
+            /* img is an inline element so it should be made block to set width */
+            display: block;
+            margin: auto;
+        }
+        h3{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .container{
+           
+            background: black;
+            color: beige;
+            border: 2px dotted red;
+            /* width: 100%; */
+            width: 1000px;
+           
+            
+        }
+        .box{
+            display: inline-block;
+            box-sizing: border-box;
+            width: 33%;
+            border: 1px solid green;
+            padding: 23px;
+        }
+      
+
+
+     
+
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://th.bing.com/th/id/R.8cb78d4601ac6b574ce19b7c96abbd12?rik=baHLI8ewx2jgBg&pid=ImgRaw&r=0" alt="">
+        <h3>Welcome to My website</h3>
+    </header>
+    <body>
+        <div class="container">
+            <div class="box">
+                <h4>heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odio laborum incidunt dolor quo praesentium nobis nihil ea, vitae eligendi reiciendis officiis animi ullam quis voluptate culpa minima vero ab a voluptatum! Enim, repellendus!</p>
+            </div>
+            <div class="box">
+                <h4>heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odio laborum incidunt dolor quo praesentium nobis nihil ea, vitae eligendi reiciendis officiis animi ullam quis voluptate culpa minima vero ab a voluptatum! Enim, repellendus!</p>
+            </div>
+            <div class="box">
+                <h4>heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odio laborum incidunt dolor quo praesentium nobis nihil ea, vitae eligendi reiciendis officiis animi ullam quis voluptate culpa minima vero ab a voluptatum! Enim, repellendus!</p>
+            </div>
+        </div>
+    </body>
+</body>
+</html>

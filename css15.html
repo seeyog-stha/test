@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+
+        /* these is meant for direct class of the parent or simply div bhitra direct p aayo vaney affect garxa otherwise not */
+        /* div > p{
+            color: azure;
+            background-color: black;
+        } */
+
+        div + p{
+            /* yedi p ko jst aagadi aauta div sybling xa vaney affect grxa */
+            color: red;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>these is a para under div</p>
+        <ul>
+            <li><p>these i para under li</p></li>
+            <p>these is para under ul</p>
+        </ul>
+        <p>these is   another para under the div</p>
+        <div>its inside div </div>
+        <p>para which jst previous sibling is a div</p>
+    </div>
+    <p>outside of the div</p>
+</body>
+</html>

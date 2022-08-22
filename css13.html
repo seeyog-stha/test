@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            font-size: 20px;
+            border: 4px solid black;
+
+            /* for making the full height  */
+            /* instead of  */
+            /* height: 900px; */
+
+            /* do */
+            height: 100vh;
+        }
+        h2{
+            text-align: center;
+        }
+        #first{
+            /* with respect to container font size */
+            /* font-size: 3em; */
+
+            /* with respect to first font size */
+            /* margin: 3em; */
+        }
+        #second{
+            /* with respect to html font size */
+            /* font-size: 3rem; */
+            /* padding: 3rem; */
+        }
+    </style>
+</head>
+<body>
+    <h1>size units</h1>
+    <div class="container">
+        <h2 id="first">these is first heading</h2>
+        <h2 id="second">these is second heading</h2>
+        <h2 id="third">these is third heading</h2>
+    </div>
+</body>
+</html>

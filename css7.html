@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more desigining</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: aqua;
+            padding: 34px;
+            margin: 34px auto;
+            width: 344px ;
+
+        }
+        .btn{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: blue;
+            padding: 6px;
+            border: none;
+            /* how the pointer will look wile pointing them */
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+
+        }
+        a:hover{
+            /* hwen u point cursor to btn it chnges its color */
+            color:red ;
+            background-color: green;
+        }
+        a:visited{
+            /* chnge coloue after u visite the link */
+            color: beige;
+            background-color: black;
+        }
+        a:active{
+            /* changes when u press the button */
+            color: brown;
+            background-color: rgb(125, 11, 100);
+        }
+
+        a{
+            /* to remove the underline of a which was locking like an link */
+            text-decoration: none;
+
+            color: black;
+        }
+        .btn:hover{
+            background-color: brown;
+            border: 2px dotted black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque sint beatae quae dolores explicabo maxime esse ea atque nam iusto ad assumenda corporis voluptatibus, minima consequuntur aut consequatur perspiciatis voluptates!</p>
+
+        <a href="http://google.com" class="btn" target="_blank">Read more</a>
+
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

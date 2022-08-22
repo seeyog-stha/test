@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            margin: 0px 10px;
+            padding: 3px 5px;
+            /* border: 2px solid red; */
+            background-color: aqua;
+
+            /* 5px is for x direction and 6px is for y direction */
+
+            /* box-shadow: offset-x offst-y color; */
+
+            /* box-shadow: 5px 6px darkblue; */
+            /* box-shadow: -5px -6px darkblue; */
+
+            /* blur radius */
+            /* the third parameter is of blur radius */
+            box-shadow: 5px 6px 10px darkblue;
+
+            /* spread radius */
+            /* the forth parameter is of spread radius it control the spread of shadow */
+            /* box-shadow: 5px 6px 10px 15px darkblue; */
+
+            /* use of rgba */
+            /* the a in rgba stands for alpha which denotes the darkeness of a colour */
+            /* box-shadow: 5px 6px 10px 15px rgba(23, 35, 70, 0.5); */
+
+            /* box-shadow inside the box */
+            /* box-shadow: inset 5px 6px darkblue; */
+
+            /* multiple shadowing */
+            /* box-shadow: 10px 10px darkblue,40px 40px red; */
+        }
+        .card h2{
+            text-shadow: 5px 3px  white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>card1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic amet dolor doloremque eos magnam corrupti eius earum accusamus qui quia!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cum saepe natus tenetur expedita ullam aperiam odio eos incidunt porro?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quos perspiciatis dolorem non accusantium laboriosam, ea officiis error eius sit.</p>
+        </div>
+        <!-- <div class="card" id="card-4"></div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise 4</title>
+</head>
+<body>
+    <!-- for form -->
+    <!-- to make sure info is given use required -->
+    <!-- submits the given form i backend.php -->
+    <form action="backend.php">
+
+        <!-- input type text -->
+        <div>
+            Name:<input type="text" placeholder="Enter your name">
+        </div>
+
+
+      <!-- input type email -->
+      <!-- through name we can identify it in backend -->
+      <div>
+        email: <input type="email" name="mymail" id="">
+      </div>
+
+      <!-- input type date -->
+      Enter your dob:<input type="date" name="my date" id="">
+
+
+      <!-- input type number -->
+      enter your roll no:<input type="number" name="" id="">
+
+      
+      <!-- input type radio -->
+      <div>
+          <label for="gender">
+              gender: Male <input type="radio" name="mygender" id="gender"> Female <input type="radio" name="mygender" id="gender">
+            </label>
+        </div>
+
+
+
+        <!-- input type check box -->
+        <!-- for default check place an "checked "inside -->
+        <label for="nameofid">
+        are u eligible?: <input type="checkbox" name="tick" id="nameofid">
+      </label>
+
+      <!-- text area -->
+      wite an essay:
+      <label for="textid">
+        <textarea name="text" id="textid" cols="30" rows="10"></textarea>
+    </label>
+        
+
+    <!-- select application -->
+    <div>
+        <label for="car">car</label>
+            <select name="mycar" id="car">
+                <option value="default" selected>choose</option>
+            <option value="ind">indica</option>
+            <option value="swift">swift</option>
+        </select>
+        
+    </div>
+
+
+        <!-- input type submit -->
+      <div>
+        <input type="submit" value="submit the value">
+      </div>
+
+
+      <!-- input type reset -->
+      <input type="reset" value="reset">
+    </form>
+</body>
+</html>

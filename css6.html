@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .container{
+            width: 900px;
+            border: 2px solid red;
+            /* for centralization */
+            margin: 23px auto;
+            background-color: sandybrown;
+        }
+        .item{
+            border: 2px solid green;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: aqua ;
+        }
+        #first{
+            float: left;
+            width: 49%;
+        }
+        #second{
+            float: right;
+            width: 49%;
+        }
+        #third{
+            /* float: left; */
+            clear: both;
+            width: 99%;
+        }
+        p,h3{
+            text-align: justify;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="text-align:center ;">Welcome</h1>
+        <div id="first" class="item">
+            <h3>heading1</h3>
+            <p id="fruits" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur delectus sed porro deserunt repellendus vero provident voluptatibus facilis, velit, iure temporibus. In ducimus eius saepe magnam nisi incidunt, aut earum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores adipisci rerum ad enim vel architecto dolorum, praesentium veritatis molestias? Voluptatibus quaerat iure vero alias eius expedita omnis exercitationem sapiente odio adipisci ab esse itaque commodi sed deserunt, asperiores laboriosam nisi!</p>
+        </div>
+    
+        <div id="second" class="item">
+            <h3>heading2</h3>
+            <p id="computer" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur delectus sed porro deserunt repellendus vero provident voluptatibus facilis, velit, iure temporibus. In ducimus eius saepe magnam nisi incidunt, aut earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestias obcaecati rerum nemo ducimus facilis, vel dolore molestiae id aperiam mollitia saepe ex ratione! Quis rem itaque illo quibusdam vero necessitatibus excepturi, cupiditate repellat odit placeat libero magnam sed ut.</p>
+        </div>
+    
+   
+        <div id="third" class="item">
+            <h3>heading3</h3>
+            <p id="book" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur delectus sed porro deserunt repellendus vero provident voluptatibus facilis, velit, iure temporibus. In ducimus eius saepe magnam nisi incidunt, aut earum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id optio dolorum qui, quisquam amet natus fuga voluptatum, et labore rerum quae ipsa temporibus assumenda inventore cupiditate exercitationem distinctio. Modi autem labore ipsum doloremque. Dicta eum et ad doloremque, cupiditate totam, rerum maiores, eos nihil odio dignissimos reiciendis consectetur quia assumenda id! Illo fugiat voluptates sint quo atque neque totam sapiente minus nobis, delectus exercitationem aspernatur dicta molestias quod culpa ratione repellendus. Provident consequuntur quisquam necessitatibus, sed illum corporis ipsam nesciunt, assumenda, impedit id repellat delectus iste! Sequi debitis corporis repellat? Necessitatibus aspernatur aliquid ea tempora hic architecto dolor consectetur tempore?</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

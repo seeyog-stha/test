@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sasta chacha</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.9CirHcaenVZCH320FyQjZAHaHa?pid=ImgDet&w=6250&h=6250&rs=1">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Splash&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Dancing Script', cursive;
+        }
+        body{
+            background-image: url("https://th.bing.com/th/id/R.ea8ba03b5660c51536c97f4e019c7f7c?rik=4S6qYStoQMNJHQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-gmAXWaoE_bo%2fT4OOSP7ZsnI%2fAAAAAAAAClM%2fXMlHd1CKa04%2fs1600%2fHomeFitness.jpg&ehk=rIQRj9XPhOW4SG2aljRTHcjhC%2bVe%2fxWwrSkCQBlmHoc%3d&risl=&pid=ImgRaw&r=0");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            box-sizing: border-box;
+        }
+        .left{
+            border: 2px solid white;
+            display: inline-block;
+            width: 10%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+        }
+        .left img{
+            box-sizing: border-box;
+            width:80%;
+            margin:0% 10%;
+            filter: invert();
+        }
+        .left p{
+            text-align: center;
+            font-size: 50%;
+            color: azure;
+            margin: 0%;
+            padding: 0%;
+        
+        }
+        nav{
+            border:2px solid red ;
+            display: block;
+            margin: auto;
+            width: 70%;
+            height: 50px;
+            padding: 0px;
+        }
+         nav ul li{
+            box-sizing: border-box;
+            display: inline-block;
+            width: 17%;
+            margin: 0% 3%;
+            padding: 2%;
+            
+            
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:white;
+            font-weight: bold;
+        }
+        nav ul li :hover,nav ul li a.active{
+            text-decoration: underline;
+            color: gray;
+        }
+        .right{
+            border: 2px solid green;
+            display: inline-block;
+            width: 10%;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            height: 50px;
+        }
+        .right .btn{
+            box-sizing: border-box;
+            margin: 0% 2%;
+            padding: 3%;
+            background-color:whitesmoke;
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(32, 31, 31);
+            cursor: pointer;
+       }
+       .btn:hover,.btn1 input:hover{
+        background-color: gray;
+        text-decoration: underline;
+       }
+       main{
+        display: inline-block;
+        border: 2px solid green;
+        margin:  10%;
+       }
+       main h1{
+        color: aliceblue;
+       }
+       main form{
+        padding: 10%;
+       }
+       .body input{
+        text-align: center;
+        /* padding: 1px; */
+        width: 50%;
+        border: 2% solid red;
+        border-radius: 6%;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="https://th.bing.com/th/id/OIP.9CirHcaenVZCH320FyQjZAHaHa?pid=ImgDet&w=6250&h=6250&rs=1" alt="logo">
+            <p>Sasta chaha fitness </p>
+        </div>
+        
+            <nav>
+                <ul>
+                    <li ><a href=""class="active">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">More</a></li>
+                </ul>
+            </nav>
+
+        
+        <div class="right">
+            <button class="btn">Email</button>
+            <button class="btn">Book now!</button>
+        </div>
+    </header>
+    <main>
+        <h1>Join sasta chachca now!!!</h1>
+
+       <form action="backend.php">
+        <div class="body">
+            <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="body">
+           <input type="number" placeholder="Enter your age">
+        </div>
+        <div class="body">
+            <input type="text" placeholder="Enter your address">
+        </div>
+        <div class="body">
+            <input type="email" placeholder="Enter your e-mail">
+        </div>
+        <div class="choose">
+            Sex:
+            <label for="female">
+                <input type="radio" name="gender" id="female">Female 
+            </label>
+            <label for="male">
+
+                <input type="radio" name="gender" id="male">Male
+            </label>
+        </div>
+        <div class="btn1">
+            <input type="reset" value="Reset">
+        </div>
+        <div class="btn1">
+            <input type="submit" value="Submit">
+        </div>
+       </form>
+    </main>
+    <!-- <div class="offer">
+        <p>
+
+            25% off on moonsoon!!
+        </p>
+    </div> -->
+    
+</body>
+</html>

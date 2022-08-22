@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Dancing Script', cursive; */
+
+}
+body{
+    background-image: url('https://th.bing.com/th/id/R.ea8ba03b5660c51536c97f4e019c7f7c?rik=4S6qYStoQMNJHQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-gmAXWaoE_bo%2fT4OOSP7ZsnI%2fAAAAAAAAClM%2fXMlHd1CKa04%2fs1600%2fHomeFitness.jpg&ehk=rIQRj9XPhOW4SG2aljRTHcjhC%2bVe%2fxWwrSkCQBlmHoc%3d&risl=&pid=ImgRaw&r=0') ;
+    /* background-size: 100%; */
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 100%;
+    color: azure;
+
+}
+.left{
+    /* border: 2px solid green; */
+    display: inline-block;
+    /* width: 120px; */
+    position: absolute;
+    left: 60px ;
+    top: 20px;
+}
+.left img{
+    width: 100px;
+    filter: invert(100%);
+    /* display: inline-block; */
+    /* margin: 0px 13px; */
+}
+.left div{
+    text-align: center;
+    line-height: 19px;
+    font-size: 20px;
+}
+.center{
+    /* border: 2px solid red; */
+    display: block;
+    margin: 12px auto;
+    width: 600px;
+    
+}
+.right{
+    position: absolute;
+    right: 34px ;
+    top: 12px;
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    /* width: 10%; */
+    
+}
+.navigation li{
+    display: inline-block;
+}
+.navigation li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 24px 34px;
+    font-size: 20px;
+}
+.navigation li :hover, .navigation li a.active{
+    color: aqua;
+    text-decoration: underline;
+}
+.right .btn{
+    box-sizing: border-box;
+    margin: 2px;
+    padding: 4px;
+    background-color:rgb(253, 250, 250);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(32, 31, 31);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover,.btn1 input:hover{
+background-color: gray;
+text-decoration: underline;
+}
+main{
+display: inline-block;
+border: 4px solid white;
+margin: 106px 80px ;
+width:50%;
+font-size: 25px;
+padding: 75px;
+border-radius: 28px;
+}
+main form{
+padding: 75px;
+}
+.body input{
+text-align: center;
+font-size: 30px;
+/* margin: 4px auto; */
+padding: 1px;
+width: 508px;
+border: 2px solid red;
+border-radius: 6px;
+}
+.choose {
+margin: 4px;
+padding: 6px;
+font-size: 25px;
+}
+.choose input{
+margin: 4px;
+width: 50px;
+}
+.choose :hover {
+text-decoration: underline;
+}
+main h1{
+padding: 0px;
+text-align: center;
+color: red;
+text-decoration: underline;
+}
+.btn1 {
+display: inline-block;
+border: 2px solid red;
+border-radius: 6px;
+width: 150px;
+margin:30px;
+}
+.btn1 input{
+    width: 150px;
+    font-size: 30px;
+}
+.offer{
+display: inline-block;
+border: 2px solid green;
+background-color: aqua;
+color: red;
+border-radius: 100px;
+font-size: 30px;
+position: fixed;
+margin: 10px;
+padding: 30px;
+}
+.offer p{
+padding: 20px;
+}

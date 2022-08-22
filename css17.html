@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <style>
+       *{
+        margin: 0px;
+        padding: 0px;
+       }
+       /* body{
+           background-repeat: no-repeat;
+           background-image: url("https://source.unsplash.com/collection/190728/1600x900");
+           background-position: center;
+           background-size: cover;
+           background:  no-repeat center/ cover url('https://source.unsplash.com/collection/190728/1600x900') ;
+       } */
+       header::before{
+        content: "";
+        background:  no-repeat center/ cover url('https://source.unsplash.com/collection/190728/1600x900') ;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        top: 0%;
+        left: 0%;
+        opacity: 0.3;
+       }
+       header{
+        display: flex;
+        justify-content: center;
+       }
+       ul{
+        width: 40rem;
+        display: flex;
+        justify-content: space-evenly;
+        /* border: 2px solid green; */
+        
+        /* justify-content: center; */
+       }
+       li{
+        list-style: none;
+        /* padding: 50px; */
+        font-size: 20px;
+       }
+       li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+       }
+       section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* border: 6px solid black; */
+        height: 300px;
+        margin:0px 300px;
+        
+       }
+       p{
+        
+        text-align: center;
+       }
+       section::before{
+        content: "these is before box";
+        /* border: 2px solid red; */
+       }
+       h1{
+        font-size: 4rem;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="class">Home</li>
+                <li class="class">About</li>
+                <li class="class">Services</li>
+                <li class="class">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>hello world!!</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis ab nisi soluta saepe quis tempora facilis molestias temporibus nemo iusto fugit officia accusamus nam repudiandae ducimus architecto incidunt molestiae unde aliquid sapiente illo, repellendus aperiam!</p>
+        </section>
+    <!-- <hr> -->
+</body>
+</html>
